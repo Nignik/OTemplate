@@ -5,6 +5,5 @@ FetchContent_MakeAvailable(googletest)
 enable_testing()
 
 add_executable(Test ${SOURCES})
-target_include_directories(Test PRIVATE ${CMAKE_SOURCE_DIR}/src)
-target_link_libraries(Test PRIVATE GTest::gtest GTest::gtest_main)
+target_link_libraries(Test PRIVATE OTemplate GTest::gtest GTest::gtest_main)
 add_test(Test Test)

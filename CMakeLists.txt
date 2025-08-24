@@ -8,4 +8,5 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 include(dependencies.cmake)
 
 add_subdirectory(src)
+add_library(otemplate::otemplate ALIAS OTemplate)
 add_subdirectory(test)
