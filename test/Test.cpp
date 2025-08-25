@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-#include "../src/ScopedPtr.h"
+#include "../OTemplate/include/ScopedPtr.h"
 
 TEST(SmartPointers, ScopedPtr) {
   Otac::ScopedPtr<float> p{10.f};
