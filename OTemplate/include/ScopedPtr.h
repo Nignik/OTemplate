@@ -43,6 +43,13 @@ namespace Otac
     T *operator->() const { return ptr_; }
     T *Get() const { return ptr_; }
 
+    T* Release()
+    {
+      T* temp = ptr_;
+      ptr_ = nullptr;
+      return temp;
+    }
+
   private:
     T *ptr_;
   };
